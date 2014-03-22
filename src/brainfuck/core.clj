@@ -23,7 +23,6 @@
   [src]
   (let [cs (map vector (range) src)
         jmps (filter (comp #{\[ \]} second) cs)]
-    (prn jmps)
     (make-table jmps)))
 
 ;; Instruction pointer
